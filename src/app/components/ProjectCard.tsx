@@ -31,7 +31,7 @@ export default function ProjectCard({
       }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+      className="bg-indigo-200 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
     >
       <div className="relative h-48 w-full">
         <Image
@@ -68,7 +68,7 @@ export default function ProjectCard({
 
         {(liveUrl || githubUrl) && (
           <div className="mt-6 flex gap-4">
-            {liveUrl && (
+            {/* {liveUrl && (
               <motion.a
                 href={liveUrl}
                 target="_blank"
@@ -77,7 +77,7 @@ export default function ProjectCard({
               >
                 Live Demo
               </motion.a>
-            )}
+            )} */}
             {githubUrl && (
               <motion.a
                 href={githubUrl}

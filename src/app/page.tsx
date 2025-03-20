@@ -48,7 +48,7 @@ export default function Home() {
                 className="relative h-96 w-full rounded-2xl mt-12 overflow-hidden"
               >
                 <Image
-                  src="/images/projects/about-profile.jpg"
+                  src="/images/projects/about.jpg"
                   alt="Profile Image"
                   fill
                   className="object-cover"
@@ -67,18 +67,19 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-white text-justify text-lg leading-relaxed mb-6"
                 >
-                  I'm a passionate full-stack developer with 5+ years of
-                  experience creating digital experiences. Specializing in
-                  modern web technologies and user-centric design, I thrive on
-                  building scalable, high-performance applications. With
-                  expertise in front-end frameworks like React and back-end
-                  technologies like Node.js and PHP, I craft seamless solutions
-                  that balance functionality and aesthetics. I enjoy solving
-                  complex problems and continuously learning to stay ahead in
-                  the ever-evolving tech landscape. Passionate about clean code,
-                  best practices, and intuitive UX, I aim to deliver impactful
-                  digital products that enhance user engagement and business
-                  growth.
+                  As a dedicated computer science student with a passion for web
+                  development, I am constantly exploring the intersection of
+                  technology and creativity. I enjoy building dynamic and
+                  user-friendly web applications, leveraging both front-end and
+                  back-end technologies to bring ideas to life. With a strong
+                  foundation in programming languages like HTML, CSS,
+                  JavaScript, and frameworks such as React or Node.js, I strive
+                  to create seamless digital experiences. Beyond academics, I
+                  actively engage in personal projects, hackathons, and
+                  open-source contributions to enhance my skills and stay
+                  updated with industry trends. My goal is to use technology as
+                  a tool to solve real-world problems while continuously
+                  learning and growing in this ever-evolving field.
                 </motion.div>
                 <div className="flex gap-4">
                   <motion.button
@@ -113,7 +114,7 @@ export default function Home() {
                     index={index}
                     title={project.title}
                     description={project.description}
-                    techStack={project.techStack}
+                    // techStack={project.techStack}
                     image={project.image}
                     liveUrl={project.liveUrl}
                     githubUrl={project.githubUrl}
@@ -121,12 +122,12 @@ export default function Home() {
                 ))}
               </div>
               <div className="mt-12 text-center">
-                <Link
+                {/* <Link
                   href="/projects"
                   className="px-8 py-3 border-2 border-sky-500 text-sky-500 rounded-lg hover:bg-sky-500 hover:text-white transition-colors"
                 >
                   View All Projects
-                </Link>
+                </Link> */}
               </div>
             </motion.div>
           </div>
@@ -135,7 +136,7 @@ export default function Home() {
         {/* Skills Section */}
         <section
           id="skills"
-          className="py-24  bg-slate-900 relative scroll-m-10"
+          className="py-24 bg-slate-900 relative scroll-m-10"
         >
           {/* Gradient Blob Decorations */}
           <div className="absolute top-0 left-0 w-full h-full -z-10">
@@ -163,35 +164,33 @@ export default function Home() {
                 className="grid grid-cols-2 md:grid-cols-4 gap-8"
               >
                 {[
-                  "React",
-                  "TypeScript",
+                  "React.js",
                   "Node.js",
-                  "AWS",
-                  "Python",
-                  "Docker",
-                  "GraphQL",
+                  "Redux",
+                  "Tailwind CSS",
                   "MongoDB",
+                  "MySQL",
+                  "GitHub",
                 ].map((skill, index) => (
                   <motion.div
                     key={skill}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: index * 0.1 }}
-                    className={`p-6 bg-gray-50 rounded-xl text-center hover:text-white transition-all duration-300 ${
-                      skill === "React"
+                    className={`pb-12 bg-indigo-200 text-xl rounded-xl text-center hover:text-white transition-all duration-300 ${
+                      skill === "React.js"
                         ? "hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600"
                         : skill === "Node.js"
                         ? "hover:bg-gradient-to-r hover:from-green-400 hover:to-green-700"
-                        : skill === "AWS"
+                        : skill === "MySQL"
                         ? "hover:bg-gradient-to-r hover:from-purple-400 hover:to-purple-700"
-                        : skill === "Docker"
+                        : skill === "GitHub"
                         ? "hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-400"
                         : "hover:bg-gradient-to-r hover:from-pink-400 hover:to-red-400"
                     }`}
                   >
                     <div className="h-12 w-12 mx-auto mb-4">
-                      {/* Add skill icons here */}
-                      <div className="text-4xl">🌟</div>
+                      <div className="text-4xl"></div>
                     </div>
                     <h3 className="font-semibold text-gray-800 hover:text-white">
                       {skill}

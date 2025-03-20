@@ -36,7 +36,7 @@ export default function Hero() {
           text="Hi,
          I'm Arun Khadka"
         />
-        <HeroSubtitle text="Frontend Developer | Building beautiful web experiences" />
+        <HeroSubtitle text="Frontend Enthusiast | Building beautiful web experiences" />
         <HeroButton id="projects" label="View My Work" />
       </div>
     </motion.section>

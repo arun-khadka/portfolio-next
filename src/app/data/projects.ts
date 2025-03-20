@@ -13,30 +13,30 @@ export interface Project {
   export const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Built a full-stack e-commerce solution with Next.js, TypeScript, and Stripe integration.",
+      title: "House Rental System",
+      description: "House Rental System is a web application that allows tenants to search for properties, while landlords can easily list and manage their offerings; the platform ensures efficient rental experience through detailed property listings, and communication between users.",
       image: "/images/projects/ecommerce.png",
-      techStack: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://example-store.com",
-      githubUrl: "https://github.com/yourusername/ecommerce-platform"
+      techStack: ["React.js", "Tailwind CSS", "MongoDb", "Node.js"],
+      liveUrl: "",
+      githubUrl: "https://github.com/arun-khadka/mern-estate"
     },
     {
       id: 2,
-      title: "React To-do App",
-      description: "A React To-Do App is a simple application that allows users to add, delete, and mark tasks as completed. It helps users manage their daily tasks efficiently.",
-      image: "/images/projects/task.png",
-      techStack: ["React", "Firebase", "Material UI", "Redux"],
-      liveUrl: "https://tasks.example.com",
-      githubUrl: "https://github.com/arun-khadka/React-Todo"
+      title: "Job Portal System",
+      description: "A full-stack Job Portal Application designed to streamline job searching and recruitment using modern tools, ensuring a seamless experience for both employers and job seekers by providing advanced search filters and an intuitive user interface.",
+      image: "/images/projects/job.png",
+      techStack: ["React.js", "Tailwind CSS", "Redux", "MongoDb", "Node.js"],
+      liveUrl: "",
+      githubUrl: "https://github.com/arun-khadka/react-jobportal"
     },
     {
       id: 3,
-      title: "Portfolio Website",
-      description: "Responsive personal portfolio website with animated sections and dark mode.",
-      image: "/images/projects/portfolio.png",
-      techStack: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      liveUrl: "https://yourportfolio.com",
-      githubUrl: "https://github.com/yourusername/portfolio"
+      title: "React Weather-app",
+      description: "A React JS weather app uses the OpenWeather API to fetch and display real-time weather data like temperature, humidity, and wind speed. It features a clean, responsive design, error handling, and visual elements for an engaging experience.",
+      image: "/images/projects/weather.png",
+      techStack: ["React.js", "openweathermapAPI"],
+      liveUrl: "",
+      githubUrl: "https://github.com/arun-khadka/React-weather-app"
     },
     
   ];
